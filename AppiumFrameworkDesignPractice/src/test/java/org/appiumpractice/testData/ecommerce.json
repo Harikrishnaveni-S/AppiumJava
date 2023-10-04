@@ -1,0 +1,20 @@
+[
+    {
+        "formPageTitle": "General Store",
+        "countryName": "Belgium",
+        "userName": "Hari",
+        "gender": "Female",
+        "productsPageTitle": "Products",
+        "productsToBeAdded": "Jordan Lift Off,Jordan 6 Rings",
+        "cartPageTitle": "Cart"
+    },
+    {
+        "formPageTitle": "General Store",
+        "countryName": "Australia",
+        "userName": "Krish",
+        "gender": "Male",
+        "productsPageTitle": "Products",
+        "productsToBeAdded": "Air Jordan 9 Retro,Jordan 6 Rings",
+        "cartPageTitle": "Cart"
+    }
+]

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-20T18:14:23 IST" name="Default suite" finished-at="2023-09-20T18:15:51 IST" duration-ms="88224">
+    <groups>
+      <group name="Regression">
+        <method signature="PlaceOrder.placeNewOrder(java.util.HashMap)[pri:0, instance:org.appiumpractice.tests.PlaceOrder@4f0f2942]" name="placeNewOrder" class="org.appiumpractice.tests.PlaceOrder"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2023-09-20T18:14:23 IST" name="Default test" finished-at="2023-09-20T18:15:51 IST" duration-ms="88224">
+      <class name="org.appiumpractice.tests.PlaceOrder">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:org.appiumpractice.tests.PlaceOrder@4f0f2942]" started-at="2023-09-20T18:14:23 IST" name="configureAppium" finished-at="2023-09-20T18:15:09 IST" duration-ms="45491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureAppium -->
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:org.appiumpractice.tests.PlaceOrder@4f0f2942]" started-at="2023-09-20T18:15:10 IST" name="preSetup" finished-at="2023-09-20T18:15:12 IST" duration-ms="2606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method signature="placeNewOrder(java.util.HashMap)[pri:0, instance:org.appiumpractice.tests.PlaceOrder@4f0f2942]" started-at="2023-09-20T18:15:12 IST" name="placeNewOrder" data-provider="getData" finished-at="2023-09-20T18:15:29 IST" duration-ms="16939" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{productsToBeAdded=Jordan Lift Off,Jordan 6 Rings, cartPageTitle=Cart, gender=Female, productsPageTitle=Products, countryName=Belgium, formPageTitle=General Store, userName=Hari}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for value found by By.id: com.androidsample.generalstore:id/toolbar_title to contain "kjkjkkjj". (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: D:\AppiumPractice\AppiumJav..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\Kapil Prakash\Down..., appium:databaseEnabled: false, appium:desired: {app: D:\AppiumPractice\AppiumJav..., automationName: UIAutomator2, chromedriverExecutable: C:\Users\Kapil Prakash\Down..., deviceName: HariEmulator, platformName: ANDROID}, appium:deviceApiLevel: 30, appium:deviceManufacturer: unknown, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2880, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2628, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 820ca373-9cea-409f-a26b-d7c15c0bace7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for value found by By.id: com.androidsample.generalstore:id/toolbar_title to contain "kjkjkkjj". (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: D:\AppiumPractice\AppiumJav..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\Kapil Prakash\Down..., appium:databaseEnabled: false, appium:desired: {app: D:\AppiumPractice\AppiumJav..., automationName: UIAutomator2, chromedriverExecutable: C:\Users\Kapil Prakash\Down..., deviceName: HariEmulator, platformName: ANDROID}, appium:deviceApiLevel: 30, appium:deviceManufacturer: unknown, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2880, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2628, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 820ca373-9cea-409f-a26b-d7c15c0bace7
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at org.appiumpractice.utils.AppiumUtils.waitUntilattributeContainsValue(AppiumUtils.java:35)
+at org.appiumpractice.tests.PlaceOrder.placeNewOrder(PlaceOrder.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeNewOrder -->
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:org.appiumpractice.tests.PlaceOrder@4f0f2942]" started-at="2023-09-20T18:15:29 IST" name="preSetup" finished-at="2023-09-20T18:15:32 IST" duration-ms="2459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method signature="placeNewOrder(java.util.HashMap)[pri:0, instance:org.appiumpractice.tests.PlaceOrder@4f0f2942]" started-at="2023-09-20T18:15:32 IST" name="placeNewOrder" data-provider="getData" finished-at="2023-09-20T18:15:48 IST" duration-ms="16495" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{productsToBeAdded=Air Jordan 9 Retro,Jordan 6 Rings, cartPageTitle=Cart, gender=Male, productsPageTitle=Products, countryName=Australia, formPageTitle=General Store, userName=Krish}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for value found by By.id: com.androidsample.generalstore:id/toolbar_title to contain "kjkjkkjj". (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: D:\AppiumPractice\AppiumJav..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\Kapil Prakash\Down..., appium:databaseEnabled: false, appium:desired: {app: D:\AppiumPractice\AppiumJav..., automationName: UIAutomator2, chromedriverExecutable: C:\Users\Kapil Prakash\Down..., deviceName: HariEmulator, platformName: ANDROID}, appium:deviceApiLevel: 30, appium:deviceManufacturer: unknown, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2880, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2628, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 820ca373-9cea-409f-a26b-d7c15c0bace7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for value found by By.id: com.androidsample.generalstore:id/toolbar_title to contain "kjkjkkjj". (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: D:\AppiumPractice\AppiumJav..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\Kapil Prakash\Down..., appium:databaseEnabled: false, appium:desired: {app: D:\AppiumPractice\AppiumJav..., automationName: UIAutomator2, chromedriverExecutable: C:\Users\Kapil Prakash\Down..., deviceName: HariEmulator, platformName: ANDROID}, appium:deviceApiLevel: 30, appium:deviceManufacturer: unknown, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2880, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2628, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 820ca373-9cea-409f-a26b-d7c15c0bace7
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at org.appiumpractice.utils.AppiumUtils.waitUntilattributeContainsValue(AppiumUtils.java:35)
+at org.appiumpractice.tests.PlaceOrder.placeNewOrder(PlaceOrder.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeNewOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.appiumpractice.tests.PlaceOrder@4f0f2942]" started-at="2023-09-20T18:15:48 IST" name="tearDown" finished-at="2023-09-20T18:15:51 IST" duration-ms="2900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.appiumpractice.tests.PlaceOrder -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
